@@ -1,0 +1,23 @@
+label{
+  margin: 15px;
+}
+input[type=text]{
+  margin: 15px 0;
+  padding: 13px;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.process-btn{
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: lightblue;
+
+  &:hover{
+    background-color: cadetblue;
+  }
+}

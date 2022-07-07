@@ -69,7 +69,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "link-shortener:build:production"
+              "browserTarget": "link-shortener:build:production",
+              "proxyConfig": "./proxy.conf.json"
             },
             "development": {
               "browserTarget": "link-shortener:build:development"

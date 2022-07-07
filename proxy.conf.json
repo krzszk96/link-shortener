@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "https://cutt.ly/api/api.php",
+    "secure": false
+  }
+}
