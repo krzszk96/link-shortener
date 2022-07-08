@@ -10,7 +10,6 @@ export class ApiService {
   constructor(private tinyUrl: NgTinyUrlService) {}
 
   public editDataDetails: any = [];
-  public subject = new Subject<any>();
   private messageSource = new  BehaviorSubject(this.editDataDetails);
   currentMessage = this.messageSource.asObservable();
   
