@@ -9,17 +9,13 @@ import {NgTinyUrlService} from 'ng-tiny-url';
 })
 export class LinkGetComponent implements OnInit {
 
-  @Output() passLink:EventEmitter<any> = new EventEmitter();
-
-  constructor(private apiService: ApiService, private tinyUrl: NgTinyUrlService) { }
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
   }
 
-  getLink(link: string){    
-    this.tinyUrl.shorten(link).subscribe(res => {
-      this.apiService.changeMessage(res);      
-    });    
+  getLink(link: string){     
+    this.apiService.convertLink(link) 
   }
 
 }
